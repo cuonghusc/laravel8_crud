@@ -8,12 +8,14 @@
 - Copy file `.env`
 
 - Change something
-```DB_CONNECTION=******
+```
+DB_CONNECTION=******
 DB_HOST=******
 DB_PORT=******
 DB_DATABASE=******
 DB_USERNAME=******
-DB_PASSWORD=******```
+DB_PASSWORD=******
+```
 
 - Run migrate
 `php artisan migrate`
