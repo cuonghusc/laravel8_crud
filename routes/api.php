@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\StudentController;
+use App\Http\Controllers\Api\ProductController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -21,3 +22,5 @@ Route::post('register',[AuthController::class,'register']);
 Route::middleware('auth:api')->group(function(){
     Route::resource('student', StudentController::class)->except(['edit','create']);
 });
+
+Route::resource('product', ProductController::class)->except(['edit','create']);
